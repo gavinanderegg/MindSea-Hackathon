@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html class="no-js" data-ng-app="wiki" data-ng-controller="wikiController">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title></title>
+		<title data-ng-bind="title"></title>
 		<meta name="description" content="">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/normalize.css">
@@ -11,10 +11,12 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<h1></h1>
+		<h1 data-ng-bind="title"></h1>
 		
+		<a href="" data-ng-click="go('foo')">Go!!!</a>
 		
 		<script src="js/angular.min.js"></script>
+		<script src="js/angular-route.min.js"></script>
 		<script src="js/main.js"></script>
 	</body>
 </html>
