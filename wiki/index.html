@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js" data-ng-app="wiki" data-ng-controller="wikiController">
+<html class="no-js" data-ng-app="wiki">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,12 +11,11 @@
 		<link rel="stylesheet" href="css/main.css">
 	</head>
 	<body>
-		<h1 data-ng-bind="title"></h1>
-		
-		<a href="" data-ng-click="go('foo')">Go!!!</a>
+		<div data-ng-view></div>
 		
 		<script src="js/angular.min.js"></script>
 		<script src="js/angular-route.min.js"></script>
+		<!-- <script src="js/angular-animate.min.js"></script> -->
 		<script src="js/main.js"></script>
 	</body>
 </html>
