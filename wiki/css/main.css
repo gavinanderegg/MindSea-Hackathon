@@ -1,4 +1,23 @@
 #root {
-	max-width: 500px;
+	max-width: 524px;
+	padding: 12px;
 	margin: auto;
+}
+
+#content {
+	border: 1px solid #DDD;
+	background: #EEE;
+	padding: 12px;
+}
+
+#buttons {
+	margin-top: 28px;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
 }
