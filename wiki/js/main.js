@@ -59,6 +59,7 @@ wikiModule.controller('contentController', function($scope, $routeParams, Page) 
 		link.href = '/#/' + titleToSlug(window.getSelection().toString());
 		window.getSelection().getRangeAt(0).surroundContents(link);
 		$scope.updateData();
+		return false;
 	};
 	
 	$scope.save = function() {
