@@ -1,25 +1,25 @@
 <!DOCTYPE html>
-<html class="no-js" data-ng-app="wiki" data-ng-controller="wikiController">
+<html class="no-js" ng-app="wiki" ng-controller="wikiController" manifest="cache.manifest">
 	<head>
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<title data-ng-bind="Page.title()"></title>
-		<meta name="description" content="">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title ng-bind="Page.title()"></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/boilerplate.css">
 		<link rel="stylesheet" href="css/main.css">
+		<link rel="apple-touch-icon" href="img/Icon.png">
+		<link rel="shortcut icon" href="img/Icon.png">
 	</head>
 	<body>
 		<div id="root">
 			<h1 data-ng-bind="Page.title()"></h1>
 			
-			<div data-ng-view></div>
+			<div ng-view></div>
 		</div>
 		
 		<script src="js/angular.min.js"></script>
 		<script src="js/angular-route.min.js"></script>
-		<!-- <script src="js/angular-animate.min.js"></script> -->
 		<script src="js/main.js"></script>
 	</body>
 </html>

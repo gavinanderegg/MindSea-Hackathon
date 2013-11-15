@@ -1,0 +1,14 @@
+CACHE MANIFEST
+# rev 1
+./img/Icon.png
+./css/normalize.css
+./css/boilerplate.css
+./css/main.css
+./js/angular.min.js
+./js/angular-route.min.js
+./js/main.js
+index.html
+content.html
+
+NETWORK:
+*
